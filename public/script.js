@@ -59,6 +59,7 @@ const connectToNewUser = (userId) => {
 
 const addVideoStream = (video, stream) => {
     video.srcObject = stream;
+    console.log(video);
     video.addEventListener('loadedmetadata', () => {
         video.play();
     })
